@@ -1,0 +1,46 @@
+---
+title: "Report"
+author: "Emilie Campos"
+date: "Last updated: `r Sys.Date()`"
+output: 
+   html_document:
+     toc: false
+     toc_float:
+        collapsed: true
+        smooth_scroll: true
+     toc_depth: 3
+     theme: "yeti"
+     highlight: tango
+     df_print: paged
+     code_folding: hide
+editor_options: 
+  chunk_output_type: inline
+---
+
+```{r Setup, include = FALSE}
+# install and load required packages
+if (!require("pacman")) 
+  install.packages("pacman", repos = 'http://cran.us.r-project.org')
+p_load(
+  "tidyverse", # many useful packages :) 
+  "here"       # file management 
+  )
+
+# set options for the whole document 
+knitr::opts_chunk$set(
+  fig.align = "center", 
+  message = FALSE, 
+  warning = FALSE, 
+  echo = TRUE,
+  out.width = "60%", 
+  fig.show = "hold"
+)
+
+ggplot2::theme_set(
+  theme_minimal()
+)
+
+# source R scripts
+
+
+```

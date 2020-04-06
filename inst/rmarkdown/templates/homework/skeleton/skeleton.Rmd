@@ -1,0 +1,51 @@
+---
+header-includes:
+   - \usepackage{amssymb,amsmath}
+   - \usepackage{amsthm, amsfonts, float}
+   - \usepackage{fancyhdr}
+   - \pagestyle{fancy}
+   - \usepackage{color}
+   - \usepackage{graphicx}
+   - \newlength\FHoffset
+   - \addtolength\headwidth{2\FHoffset}
+   - \fancyheadoffset{\FHoffset}
+
+   - \lhead{Emilie Campos}
+   - \chead{Course - Assignment}
+   - \rhead{Due Date}
+output: pdf_document
+fontsize: 10pt
+geometry: margin=1in
+---
+
+\setlength{\abovedisplayskip}{0pt}
+\setlength{\belowdisplayskip}{0pt}
+\setlength{\abovedisplayshortskip}{0pt}
+\setlength{\belowdisplayshortskip}{0pt}
+
+```{r Setup, include = FALSE}
+# install and load required packages
+if (!require("pacman")) 
+  install.packages("pacman", repos = 'http://cran.us.r-project.org')
+p_load(
+  "tidyverse", # many useful packages :) 
+  "here"       # file management 
+  )
+
+# set options for the whole document 
+knitr::opts_chunk$set(
+  fig.align = "center", 
+  message = FALSE, 
+  warning = FALSE, 
+  echo = TRUE,
+  out.width = "60%", 
+  fig.show = "hold"
+)
+
+ggplot2::theme_set(
+  theme_minimal()
+)
+
+# source R scripts
+
+```
