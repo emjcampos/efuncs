@@ -6,12 +6,6 @@
 \usage{
 unicorn_cols(...)
 }
-\arguments{
-\item{...}{}
-}
-\value{
-
-}
 \description{
 Title
 }

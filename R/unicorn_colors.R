@@ -10,8 +10,6 @@ unicorn_colors <- c(
 #' Title
 #'
 #' @param ...
-#'
-#' @return
 #' @export
 unicorn_cols <- function(...) {
   cols <- c(...)
