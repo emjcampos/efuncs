@@ -31,7 +31,7 @@ theme_emilie <- function() {
       axis.title = element_text(size = 11, color = "grey50"),
       axis.text = element_text(size = 8),
       legend.background = element_rect(),
-      legend.position = "top",
+      legend.position = "bottom",
       legend.direction = "horizontal",
       legend.box = "vertical"
     )
