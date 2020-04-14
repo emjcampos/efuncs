@@ -27,7 +27,6 @@ theme_emilie <- function() {
       plot.margin = unit(c(1, 1, 1, 1), "lines"),
       strip.text = element_text(size = 11),
       strip.background = element_rect(),
-      axis.ticks = element_blank(),
       axis.title = element_text(size = 11, color = "grey50"),
       axis.text = element_text(size = 8),
       legend.background = element_rect(),
