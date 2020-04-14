@@ -6,9 +6,9 @@
 theme_emilie <- function() {
   extrafont::loadfonts(device = "pdf", quiet = TRUE)
 
-  ggthemes::theme_foundation(
+  ggthemes::theme_minimal(
     base_size = 12,
-    base_family = "Arial Narrow"
+    base_family = "Montserrat"
   ) +
     theme(
       rect = element_rect(fill = "#F0F0F0",
