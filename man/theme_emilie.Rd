@@ -2,10 +2,10 @@
 % Please edit documentation in R/ggplot_themes.R
 \name{theme_emilie}
 \alias{theme_emilie}
-\title{Emilie's ggplot theme}
+\title{ggplot theme}
 \usage{
 theme_emilie()
 }
 \description{
-Emilie's ggplot theme
+ggplot theme
 }
