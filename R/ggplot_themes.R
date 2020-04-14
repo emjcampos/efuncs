@@ -16,7 +16,6 @@ theme_emilie <- function() {
                           colour = NA),
       text = element_text(color = "grey 25"),
       plot.title = element_text(size = 18,
-                                face = "bold",
                                 hjust = 0),
       plot.subtitle = element_text(size = 14),
       plot.caption = element_text(family = "sans",
