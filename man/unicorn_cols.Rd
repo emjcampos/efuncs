@@ -7,7 +7,10 @@
 unicorn_cols(...)
 }
 \arguments{
-\item{...}{extra arguments to choose colors}
+\item{...}{}
+}
+\value{
+
 }
 \description{
 Title
