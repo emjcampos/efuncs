@@ -7,7 +7,7 @@
 sherbert_pal(palette = "main", reverse = FALSE, ...)
 }
 \arguments{
-\item{palette}{Character name of palette in sherbert_palettes}
+\item{palette}{Character name of palette in unicorn_palettes}
 
 \item{reverse}{Boolean indicating whether the palette should be reversed}
 

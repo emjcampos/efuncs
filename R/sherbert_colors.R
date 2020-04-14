@@ -8,6 +8,10 @@ sherbert_colors <- c(
   `green`        = "#28bb94"
 )
 
+#' Title
+#'
+#' @param ...
+#' @export
 sherbert_cols <- function(...) {
   cols <- c(...)
 
@@ -23,10 +27,11 @@ sherbert_palettes <- list(
 
 #' Return function to interpolate an sherbert color palette
 #'
-#' @param palette Character name of palette in sherbert_palettes
+#' @param palette Character name of palette in unicorn_palettes
 #' @param reverse Boolean indicating whether the palette should be reversed
 #' @param ... Additional arguments to pass to colorRampPalette()
-#'
+#' @importFrom grDevices colorRampPalette
+#' @export
 sherbert_pal <- function(palette = "main", reverse = FALSE, ...) {
   pal <- sherbert_palettes[[palette]]
 
@@ -43,7 +48,7 @@ sherbert_pal <- function(palette = "main", reverse = FALSE, ...) {
 #' @param reverse Boolean indicating whether the palette should be reversed
 #' @param ... Additional arguments passed to discrete_scale() or
 #'            scale_color_gradientn(), used respectively when discrete is TRUE or FALSE
-#'
+#' @export
 scale_color_sherbert <- function(palette = "main", discrete = TRUE, reverse = FALSE, ...) {
   pal <- sherbert_pal(palette = palette, reverse = reverse)
 
@@ -61,7 +66,7 @@ scale_color_sherbert <- function(palette = "main", discrete = TRUE, reverse = FA
 #' @param reverse Boolean indicating whether the palette should be reversed
 #' @param ... Additional arguments passed to discrete_scale() or
 #'            scale_fill_gradientn(), used respectively when discrete is TRUE or FALSE
-#'
+#' @export
 scale_fill_sherbert <- function(palette = "main", discrete = TRUE, reverse = FALSE, ...) {
   pal <- sherbert_pal(palette = palette, reverse = reverse)
 
