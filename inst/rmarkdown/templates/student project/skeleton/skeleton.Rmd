@@ -1,0 +1,74 @@
+---
+title: "First Name Last Name"
+subtitle: "Project Title"
+author: "Analyst: Analyst Name"
+date: "Last updated: `r Sys.Date()`"
+output: 
+  bookdown::html_document2:
+    toc: true
+    toc_float:
+      collapsed: true
+    smooth_scroll: true
+    toc_depth: 5
+    theme: "yeti"
+    highlight: tango
+    df_print: paged
+    code_folding: hide
+knit: (function(inputFile, encoding) { rmarkdown::render(inputFile, encoding = encoding, output_file = paste0(dirname(inputFile), paste0('/sp_lastname_', Sys.Date(), '.html'))) })
+---
+
+<style>
+.math {
+font-size: small;
+}
+</style>
+
+```{r Setup, include = FALSE}
+# install and load required packages
+if (!require("pacman")) 
+  install.packages("pacman", repos = 'https://urldefense.com/v3/__http://cran.us.r-project.org__;!!BZ50a36bapWJ!tUMnSICYeZyTygRbcGiNHhiPIQYzCTZ2_LlD3U57vOqiGH8Hj5xvxKUnqSL4VcVz5wzwfGxklW15LAG56DohAgca$ ')
+p_load(
+  "tidyverse", 
+  "here", 
+  "broom",
+  "latex2exp", 
+  "ggrepel",
+  "harrypotter", 
+  "glue", 
+  "kableExtra", 
+  "scales"
+)
+
+# set options for the whole document 
+knitr::opts_chunk$set(
+  fig.align = "center", 
+  message   = FALSE, 
+  warning   = FALSE, 
+  echo      = TRUE
+)
+
+ggplot2::theme_set(
+  theme_minimal() + 
+    theme(legend.position = "bottom")
+)
+
+# source R scripts
+
+```
+
+```{r read in cleaned data}
+
+```
+
+# Univariate Analyses
+
+
+# Bivariate Analyses 
+
+
+# Multivariable Modelling {.tabset} 
+
+## Model 1
+
+
+## Model 2

@@ -10,6 +10,6 @@ Description: Provides tools for myself that may or may not be my own or found el
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.1.0
+RoxygenNote: 7.2.3
 Maintainer: Emilie Campos <emjcampos00@gmail.com>
 Depends: ggplot2
